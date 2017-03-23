@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULADORA</title>
+  </head>
+  <body>
+    <div align= center>
+      <h1>CALCULADORA</h1>
+      <form name="calculadora" >
+        <table  border="2px">
+          <tr>
+            <td colspan="5"><input type="text" id="res"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="1" value="1" onClick="darNumero(numero);"></td>
+            <td><input type="button" id="2" value="2" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="3" value="3" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="sumar" value="+" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="potencia" value="^" onClick="mostrarNumero(this.value);"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="4" value="4" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="5" value="5" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="6" value="6" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="restar" value="-" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="igual" value="=" onClick="mostrarNumero(this.value);"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="7" value="7" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="8" value="8" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="9" value="9" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="multiplicar" value="*" onClick="mostrarNumero(this.value);"></td>
+            <td rowspan="2"><input type="reset" value="C" style="height: 50px;"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="punto" value="." onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="0" value="0" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="porcentaje" value="%" onClick="mostrarNumero(this.value);"></td>
+            <td><input type="button" id="dividir" value="/" onClick="mostrarNumero(this.value);"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src='js/calculadora.js'></script>
+  </body>
+</html>
